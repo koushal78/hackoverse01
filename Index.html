@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart water </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="farmer-image" >
+        <nav class="nav">
+            <h1 class="logo">LO<span>GO</span></h1>
+            <ul class="nav-link">
+             <a href=""><li>Home</li></a>   
+                <a href=""><li>About</li></a> 
+              <a href=""><li>Contect</li></a>  
+              <a href=""><li>Work With Us</li></a>  
+            </ul>
+        </nav>
+        <div class="input" >
+            <div class="input-1" >
+
+          
+            <DIV class="countries">
+                <select id="countries" value=" Countries" name="countries">
+                    <option value="AF" id="" selected>Countries</option>
+                    <option value="IN" id="id">India</option>
+                    
+                  </select>
+
+            </DIV>
+
+            <div class="state">
+                <select id="states" name="states">
+                    <!-- Options will be added here dynamically -->
+                    <option value="" selected>state</option>
+                  </select>
+            </div>
+            <div class="distic">
+                <select id="districts" name="districts">
+                    <!-- Options will be added here dynamically -->
+                    <option value="" selected>Distic</option>
+                  </select>
+            </div>
+            <div class="village">
+
+                <select id="villages" name="villages">
+                    <!-- Options will be added here dynamically -->
+                    <option value="" selected>village</option>
+                  </select>
+                
+                </div>
+            </div>
+            
+          <a href="">
+            <button class="btn">Search</button>
+          </a> 
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        // Array of state names in India
+        const statesInIndia = [
+          "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chhattisgarh", "Goa",
+          "Gujarat", "Haryana", "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala",
+          "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland",
+          "Odisha", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura",
+          "Uttar Pradesh", "Uttarakhand", "West Bengal", "Andaman and Nicobar Islands",
+          "Chandigarh", "Dadra and Nagar Haveli", "Daman and Diu", "Lakshadweep", "Delhi",
+          "Puducherry"
+        ];
+    
+        const selectElement1 = document.getElementById('states');
+        const contrie = document.getElementById
+        // Create an <option> element for each state and append it to the <select> element
+        statesInIndia.map(state => {
+          const option = document.createElement('option');
+          option.text = state;
+          option.value = state; // You can set the value to a state code if needed
+          selectElement1.appendChild(option);
+        });
+        const countrie = document.getElementById("IN")
+
+
+
+
+
+const districtsInUP = [
+    "Agra", "Aligarh", "Allahabad", "Ambedkar Nagar", "Amethi", "Amroha", "Auraiya",
+    "Azamgarh", "Baghpat", "Bahraich", "Ballia", "Balrampur", "Banda", "Barabanki",
+    "Bareilly", "Basti", "Bijnor", "Budaun", "Bulandshahr", "Chandauli", "Chitrakoot",
+    "Deoria", "Etah", "Etawah", "Faizabad", "Farrukhabad", "Fatehpur", "Firozabad",
+    "Gautam Buddha Nagar", "Ghaziabad", "Ghazipur", "Gonda", "Gorakhpur", "Hamirpur",
+    "Hapur", "Hardoi", "Hathras", "Jalaun", "Jaunpur", "Jhansi", "Kannauj", "Kanpur Dehat",
+    "Kanpur Nagar", "Kasganj", "Kaushambi", "Kushinagar", "Lakhimpur Kheri", "Lalitpur",
+    "Lucknow", "Maharajganj", "Mahoba", "Mainpuri", "Mathura", "Mau", "Meerut", "Mirzapur",
+    "Moradabad", "Muzaffarnagar", "Pilibhit", "Pratapgarh", "Rae Bareli", "Rampur",
+    "Saharanpur", "Sambhal", "Sant Kabir Nagar", "Shahjahanpur", "Shamli", "Shravasti",
+    "Siddharthnagar", "Sitapur", "Sonbhadra", "Sultanpur", "Unnao", "Varanasi"
+  ];
+
+  const selectElement = document.getElementById('districts');
+
+  // Create an <option> element for each district and append it to the <select> element
+  districtsInUP.map(district => {
+    const option = document.createElement('option');
+    option.text = district;
+    option.value = district; // You can set the value to a district code if needed
+    selectElement.appendChild(option);
+  });
+  const villagesInGhaziabad = [
+      "Abhay Khand", "Ahinsa Khand", "Chander Nagar", "Govindpuram", "Hindon Vihar",
+      "Kaushambi", "Kavi Nagar", "Lal Kuan", "Mohan Nagar", "Nandgram",
+      "Nehru Nagar", "Raj Nagar", "Rajendra Nagar", "Shalimar Garden", "Surya Nagar",
+      "Vaishali", "Vasundhara"
+    ];
+
+    const selectElement2 = document.getElementById('villages');
+
+    // Create an <option> element for each village and append it to the <select> element
+    villagesInGhaziabad.map(village => {
+      const option = document.createElement('option');
+      option.text = village;
+      option.value = village; // You can set the value to a village code if needed
+      selectElement2.appendChild(option);
+    });
+      </script>
+</body>
+</html>
